@@ -6,42 +6,42 @@ let obj = {
 }
 
 //**** for loop *******
-// for (var i in obj) {
-//   var value = obj[i]
+// for (let i in obj) {
+//   let value = obj[i]
 //   console.log(i, value)
 // }
 
 
 //************object keys*************
-// var items = Object.keys(obj)
-// // var value = Object.values(obj)
+// let items = Object.keys(obj)
+// // let value = Object.values(obj)
 
 // items.map(keys => {
-//           var value = obj[keys]
+//           let value = obj[keys]
 //           console.log(keys, value)
 // })
 
 
 //*********Object.values******
 
-// var items = Object.values(obj); //get values
+// let items = Object.values(obj); //get values
 
 // items.map(values => {
-//   var key = Object.keys(obj)
+//   let key = Object.keys(obj)
 //   console.log(key, values)
 // })
 
 
 ///*******Object.getOwnPropertyNames*********///
 
-// var items = Object.getOwnPropertyNames(obj)
+// let items = Object.getOwnPropertyNames(obj)
 
 // items.map(key => {
-//   var values = Object.values(obj)
+//   let values = Object.values(obj)
 //   console.log(key, values)
 // })
 
-// var items = Object.entries(obj)
+// let items = Object.entries(obj)
 // // console.log(items)
 
 // items.map(key => {
