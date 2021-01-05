@@ -8,8 +8,19 @@
     <title>Array Practice</title>
 </head>
 <body>
-<script src="arrayCountableFunction.js"></script>
-<script src="object.js"></script>
-<script src="sumArray.js"></script>
+<!--<script src="arrayCountableFunction.js"></script>-->
+<!--<script src="object.js"></script>-->
+<!--<script src="sumArray.js"></script>-->
+<script type="text/javascript">
+// inner function
+    function something(greet, name) {
+        function sayHi() {
+            console.log(greet, name)
+        }
+        sayHi();
+    }
+    something("Good Morning", "Nazmul!")
+
+</script>
 </body>
 </html>
