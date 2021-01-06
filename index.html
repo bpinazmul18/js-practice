@@ -23,6 +23,8 @@
 //     }
 //     something("Good Morning", "Nazmul!")
 
+
+
 //inner function first name
 
 
@@ -35,7 +37,11 @@
 //     let message = greet + ' ' + sayHi();
 //     console.log(message)
 // }
+
+
+
 // something("Good Morning", "Nazmul Haque");
+
 
 // function something(greet, name) {
 //     function sayHi() {
@@ -49,7 +55,9 @@
 // something("Good Morning", "Md Nazmul Haque")
 
 
+
 //function scope
+
 
 // var a = 10;
 // function x () {
@@ -65,7 +73,9 @@
 // console.log(a)
 
 
+
 //return function from function
+
 
 // function base(b) {
 //     return function(n) {
@@ -80,7 +90,9 @@
 // console.log(x(3))
 
 
+
 //javascript return statement
+
 
 // function name (firstName, lastName, gender) {
 //     var result;
@@ -95,9 +107,12 @@
 // console.log
 
 
+
 //higher order function
 
+
 //-using forEach-//
+
 // var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 // arr.forEach (arr=>{
 //     console.log(arr)
@@ -108,7 +123,9 @@
 // })
 
 
+
 //-using map-//
+
 // arr.map(arr => {
 //     console.log(arr)
 // })
@@ -118,7 +135,9 @@
 // })
 
 
+
 //-using filter-//
+
 // arr.filter(arr => {
 //     console.log(arr)
 // })
@@ -128,7 +147,9 @@
 // })
 
 
+
 //function self invoking
+
 
 // (function() {
 //     console.log("hi")
@@ -140,14 +161,18 @@
 // })();
 
 
+
 //anonymous function in self invoking
+
 
 // (()=>{
 //    alert("Hello, I'm anonymous function");
 // })();
 
 
+
 //callback function
+
 
 // function hello (name) {
 //     print(name);
@@ -157,11 +182,39 @@
 // }
 // print("Welcome");
 
-function hello (name, print) {
-    print(name)
+// function hello (name, print) {
+//     print(name)
+// }
+// hello("Md Nazmul Haque", function(name){
+//     console.log("Hello", name)
+// })
+
+
+
+//callback function
+
+// var me = {
+//     name : 'Md Nazmul',
+//     age  : 22,
+//     email: 'bpinazmul18@gmail.com'
+// }
+// function mySelfs(person, callback)  {
+//     console.log('Person: ' + person.name)
+// }
+// mySelfs(me)
+
+function print(data, callback1, callback2) {
+    console.log('Original data: ' + data);
+    callback1(data);
+    callback2(data);
 }
-hello("Md Nazmul Haque", function(name){
-    console.log("Hello", name)
+
+print('This is a simple data.', function(data){
+    var data = data.toUpperCase();
+    console.log('Uppercase: ' + data);
+}, function(data) {
+    var data = data.toLowerCase();
+    console.log('Lowercase: ' + data)
 })
 </script>
 
