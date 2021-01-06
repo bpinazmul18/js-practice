@@ -370,13 +370,16 @@
 
 
 var arr = [33, 22, 11, 45, 43, 56, 16, 2, 5, 1, 66, 99, 74]
-arr.sort(function(a, b){
+var x = arr.sort(function(a, b){
     return a -b;
 });
 
-console.log(arr)
+console.log(x)
 
-
+var y = arr.sort(function(a, b){
+    return b - a;
+})
+console.log(y);
 </script>
 
 </body>
