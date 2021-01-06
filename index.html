@@ -224,15 +224,123 @@
 //return function
 
 
-function host() {
-    console.log("Hello, I'm host.");
-    function sub() {
-        console.log("Hi, I'm child function")
-    }
-    return sub();
-}
+// function host() {
+//     console.log("Hello, I'm host.");
+//     function sub() {
+//         console.log("Hi, I'm child function")
+//     }
+//     return sub();
+// }
+//
+// host();
 
-host();
+
+// function hello(name) {
+// //   print(name);
+//   print(name + ' Nazmul Haque')
+// }
+
+// function print(args) {
+//   console.log(args)
+// }
+
+// hello('welcome')
+
+// function test(a) {
+//   hello(a + ' welcome');
+// }
+
+// function hello (b) {
+//   console.log(b)
+// }
+
+// test('Md Nazmul Haque')
+
+// function test(args, print) {
+//   print(args);
+// }
+
+// test('Nazmul', function(args) {
+//   console.log('hello, ' + args)
+// })
+
+// test('Johan', function (args) {
+//   console.log('hi, ' + args)
+// })
+
+// var obj = {
+//   name: 'Md Nazmul Haque',
+//   age  : 5,
+//   email: 'bpinazmul18@gmail.com'
+// }
+
+
+// function printSomething(person, callback) {
+//   console.log('person: ' + person.name + ' ()' + person.age + ') ')
+//   if(person.age >= 18) {
+//     callback(person.email);
+//   }else {
+//     console.log('You are too little...')
+//   }
+// }
+
+
+// printSomething(obj, function(args){
+//   console.log('Email sent to ' + args)
+// })
+
+// function printMySelf(person, callback) {
+//   console.log('person: ' + person.name + ' age ' + person.age)
+//   if(person.age >= 18) {
+//     callback(person.email)
+//   }else {
+//     console.log('Your are too much little.')
+//   }
+// }
+
+
+// printMySelf(obj, function(args) {
+//   console.log('Email sent to : ' + args)
+// })
+
+
+// function mySelf(person, callback) {
+//   console.log('person: ' + person.name + ' age ' + person.age)
+//   if(person.age >= 18) {
+//     callback(person.email)
+//   }else {
+//     console.log('Your are too much little!')
+//   }
+// }
+
+
+// mySelf(obj, function(email){
+//   console.log('Email sent to: ' + email)
+// })
+
+
+
+
+
+// function print(data, callback1, callback2) {
+//     console.log('Original Data: ' + data);
+//     callback1(data);
+//     callback2(data);
+// }
+//
+// print('Hello, Brothers Where are you going?', function(data){
+//     var data = data.toUpperCase();
+//     console.log('UpperCase: ' + data)
+// }, function(data){
+//     var data = data.toLowerCase();
+//     console.log('Lowercase: ' + data)
+// });
+
+
+
+
+
+
 
 
 </script>
