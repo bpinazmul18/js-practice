@@ -221,6 +221,19 @@
 
 
 
+//return function
+
+
+function host() {
+    console.log("Hello, I'm host.");
+    function sub() {
+        console.log("Hi, I'm child function")
+    }
+    return sub();
+}
+
+host();
+
 
 </script>
 
