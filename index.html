@@ -507,15 +507,34 @@ var arr = [1, 2, 3, 4, 5, 6]
 // }
 // console.log(mapArr)
 
-var newArr = arr.map(function(value){
-    return value * 2;
-})
-console.log(newArr);
+// var newArr = arr.map(function(value){
+//     return value * 2;
+// })
+// console.log(newArr);
+//
+// var newArr2 = arr.map(value=> {
+//     return value * 3;
+// })
+// console.log(newArr2);
 
-var newArr2 = arr.map(value=> {
-    return value * 3;
-})
-console.log(newArr2);
+//custom map function
+// function myMap(arr, callback) {
+//     var newArr = []
+//     for (var i = 0; i < arr.length; i++) {
+//         newArr.push(callback(arr[i]))
+//     }
+//     return newArr;
+// }
+//
+// var x = myMap(arr, function (value) {
+//     return value * 2;
+// })
+// console.log(x);
+//
+// var y = myMap(arr, value=>{
+//     return value * 3;
+// })
+// console.log(y)
 </script>
 
 </body>
