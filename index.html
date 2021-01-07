@@ -433,6 +433,17 @@ var people = [
 // })
 //
 // console.log(x);
+var arr = [1, 2, 3, 4, 5, 6]
+function forEac(arr, callback) {
+    for(var i = 0; i < arr.length; i++) {
+        callback(arr[i]);
+    }
+}
+
+var x = forEac(arr, function(elem) {
+    console.log('Element is:- ' + elem)
+})
+
 </script>
 
 </body>
