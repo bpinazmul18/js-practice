@@ -507,6 +507,15 @@ var arr = [1, 2, 3, 4, 5, 6]
 // }
 // console.log(mapArr)
 
+var newArr = arr.map(function(value){
+    return value * 2;
+})
+console.log(newArr);
+
+var newArr2 = arr.map(value=> {
+    return value * 3;
+})
+console.log(newArr2);
 </script>
 
 </body>
