@@ -644,7 +644,62 @@
 // console.log(sum);
 
 
+//map function
 
+var arr = [1, 2, 3, 4, 5]
+
+// function map(arr, cb) {
+//     var newArr = []
+//     for (var i = 0; i < arr.length; i ++) {
+//         var temp = cb(arr[i], i, arr)
+//         newArr.push(temp);
+//     }
+//     return newArr;
+// }
+// console.log(arr)
+// var arrSqrt = map(arr, function (value) {
+//     return value * 2;
+// })
+// console.log(arrSqrt)
+// var addArr = map(arr, function(value) {
+//     return value * 3;
+// })
+// console.log(addArr);
+//
+// var multi = map(arr, function(value) {
+//     return value * value
+// })
+//
+// console.log(multi)
+
+
+//filter function
+
+function filter(arr, cb) {
+    var newArr = []
+    for(var i = 0; i < arr.length; i++) {
+        if(cb(arr[i], i, arr)) {
+            newArr.push(arr[i])
+        }
+    }
+    return newArr
+}
+
+var arrOddNumber = filter(arr, function(value) {
+    return value % 2 == 1;
+})
+
+console.log(arrOddNumber)
+
+var arrEvenNumber = filter(arr, function(value) {
+    return value % 2 == 0;
+})
+console.log(arrEvenNumber)
+
+var greaterThanTwo = filter(arr, (value) => {
+    return value > 4;
+})
+console.log(greaterThanTwo)
 </script>
 
 </body>
